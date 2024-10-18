@@ -58,3 +58,4 @@ import { useEffect, useState } from "react";
 - Image component also supports placeholder images, which are low-quality images that are displayed while the high-quality images are loading.
 - we can also specify the quality of the image in order to reduce the file size and improve performance.
 - we can specify placeholder blur so when the image loading it will show a blur image
+- there are two ways for using image component, one must specify width and height and second one didn't have to specify width and height but the image must imported before using it
