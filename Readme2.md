@@ -44,3 +44,17 @@ import { useEffect, useState } from "react";
 
 - app: all the folder in the app folder are accessible from the browser, to make a folder not accessible from the browser add a underscore before the folder name for ex: \_components
 - @: is an alias for the src folder so use @/app/components
+
+## optimizing font in nextjs
+
+- import fonts from "next/fonts/..." and use it
+
+## optimizing images in nextjs
+
+- use Image component from next/image
+- Image component is a wrapper around the img tag that optimizes images for performance and accessibility.
+- Image component automatically resizes images based on the device size and screen resolution.
+- Image component also supports lazy loading, which means images are loaded only when they're in the viewport.
+- Image component also supports placeholder images, which are low-quality images that are displayed while the high-quality images are loading.
+- we can also specify the quality of the image in order to reduce the file size and improve performance.
+- we can specify placeholder blur so when the image loading it will show a blur image
