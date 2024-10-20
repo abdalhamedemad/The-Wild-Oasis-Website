@@ -59,3 +59,24 @@ import { useEffect, useState } from "react";
 - we can also specify the quality of the image in order to reduce the file size and improve performance.
 - we can specify placeholder blur so when the image loading it will show a blur image
 - there are two ways for using image component, one must specify width and height and second one didn't have to specify width and height but the image must imported before using it
+
+## Loading Spinner in nextjs
+
+- we can set a loading component at root level or in any page level and this loading components will render until the page is fully loaded ,
+- but here will be for the whole components that in the page will loading spinner - but if we want to show loading spinner for a specific part in the component we can use the Suspense component from react
+
+## SUSPENSE in nextjs
+
+- Suspense is a component that allows you to show a loading spinner while waiting for data to load. for async function will show the spinner until finished
+  example:
+
+```jsx
+import { Suspense } from "react";
+export default async function MyComponent() {
+  return (
+    <Suspense fallback={<Spinner />}>
+      <ASYNCCOMPONETTHATFETCHINGDATA>
+    </Suspense>
+  );
+}
+```
