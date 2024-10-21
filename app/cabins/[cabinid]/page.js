@@ -1,6 +1,15 @@
-import { getCabin } from "@/app/_lib/data-service";
+import { getCabin, getCabins } from "@/app/_lib/data-service";
 import { EyeSlashIcon, MapPinIcon, UsersIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+
+// here the following line will make the data cashed at the server side
+// to be revalidated every 0 seconds so will change this page to be dynamic page
+// page will be refetch and render page with every request (close cashing)
+// export const revalidate = 0;
+
+// in order to achieve SSG static site generation with ISR incremental static regeneration
+// and allow cashing the data for 1 hour (3600 seconds) we will use the following line
+export const revalidate = 3600;
 
 // generate meta data dynamically
 export async function generateMetadata({ params: { cabinid } }) {
@@ -13,6 +22,18 @@ export async function generateMetadata({ params: { cabinid } }) {
   return {
     title: `Cabin ${cabin.name}`,
   };
+}
+// here we are generating static paths for all cabins
+// in order to make this page rendered as SSG static site generation
+export async function generateStaticParams() {
+  try {
+    const cabins = await getCabins();
+    const ids = cabins.map((cabin) => ({ cabinid: String(cabin.id) }));
+    return ids;
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
 }
 
 export default async function Page({ params }) {
