@@ -80,3 +80,24 @@ export default async function MyComponent() {
   );
 }
 ```
+
+## Client components and server components in nextjs
+
+- Client components can import only client components and can also import server components but in this case will be a client component also
+- all children of client components will be client components ,so make client components as deep as possible
+  in the component tree
+- we can pass server components as props to client components and in a Server component and in this case the server component will still be a server component
+- Server components can import client components and server components and the component still be a server component
+
+## Highlight the navigation link in nextjs
+
+- we can highlight the navigation link by using the usePathname Hook from next/Navigation so this component must be client component bec we use a Hook
+
+## Passing data from Server to Client
+
+- here very straight full by passing props
+
+## Passing data from Client to Server
+
+- the best way by url query params
+  in the Client side update the url and at server use searchParams props to get values and filter according to it

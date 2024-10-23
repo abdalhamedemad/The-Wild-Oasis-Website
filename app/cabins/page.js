@@ -1,14 +1,26 @@
 import { Suspense } from "react";
 import CabinList from "../_components/CabinList";
 import Spinner from "../_components/Spinner";
+import Filter from "../_components/Filter";
+
+// here the following line will make the data cashed at the server side
+// to be revalidated every 0 seconds so will change this page to be dynamic page
+// page will be refetch and render page with every request (close cashing)
+// export const revalidate = 0;
+
+// in order to achieve SSG static site generation with ISR incremental static regeneration
+// and allow cashing the data for 1 hour (3600 seconds) we will use the following line
+export const revalidate = 3600;
 
 export const metadata = {
   title: "Cabins",
 };
 
-export default async function Page() {
+// here we use searchParams so this page will be dynamically generated
+export default async function Page({ searchParams }) {
   // CHANGE
   // will be blocking until the data is fetched
+  const filter = searchParams?.capacity ?? "all";
 
   return (
     <div>
@@ -23,8 +35,14 @@ export default async function Page() {
         away from home. The perfect spot for a peaceful, calm vacation. Welcome
         to paradise.
       </p>
-      <Suspense fallback={<Spinner />}>
-        <CabinList />
+      <div className="flex justify-end mb-8">
+        <Filter />
+      </div>
+      {/* we pass a key in order to show the spinner while the component rendered 
+      during the transition between the filters
+      */}
+      <Suspense fallback={<Spinner />} key={filter}>
+        <CabinList filter={filter} />
       </Suspense>
     </div>
   );

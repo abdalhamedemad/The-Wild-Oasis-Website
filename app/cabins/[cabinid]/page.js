@@ -1,15 +1,7 @@
+import TextExpander from "@/app/_components/TextExpander";
 import { getCabin, getCabins } from "@/app/_lib/data-service";
 import { EyeSlashIcon, MapPinIcon, UsersIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-
-// here the following line will make the data cashed at the server side
-// to be revalidated every 0 seconds so will change this page to be dynamic page
-// page will be refetch and render page with every request (close cashing)
-// export const revalidate = 0;
-
-// in order to achieve SSG static site generation with ISR incremental static regeneration
-// and allow cashing the data for 1 hour (3600 seconds) we will use the following line
-export const revalidate = 3600;
 
 // generate meta data dynamically
 export async function generateMetadata({ params: { cabinid } }) {
@@ -58,7 +50,9 @@ export default async function Page({ params }) {
             Cabin {name}
           </h3>
 
-          <p className="text-lg text-primary-300 mb-10">{description}</p>
+          <p className="text-lg text-primary-300 mb-10">
+            <TextExpander>{description}</TextExpander>
+          </p>
 
           <ul className="flex flex-col gap-4 mb-7">
             <li className="flex gap-3 items-center">
