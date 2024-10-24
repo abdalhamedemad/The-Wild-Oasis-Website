@@ -101,3 +101,7 @@ export default async function MyComponent() {
 
 - the best way by url query params
   in the Client side update the url and at server use searchParams props to get values and filter according to it
+
+## Fetching data in nextjs
+
+- BETTER to fetch data at Server components and passed to client component as a props
