@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="./public//logo-light.png" alt="Project logo" width="200"></a>
+ <img src=".//app/icon.png" alt="Project logo" width="200"></a>
  </a>
 </p>
 
@@ -84,23 +84,19 @@
 
 ### 🚶‍➡️Login
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/main/screenshots/login-page.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/screenshots/login-page.png?raw=true)
 
 ### 🏠 Home Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/main/screenshots/home-page.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/screenshots/home-page.png?raw=true)
 
 ### 🏠 Cabin Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/main/screenshots/cabins-page.png?raw=true)
-
-### 👜 Booking Page
-
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/main/screenshots/Bookings.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/screenshots/cabins-page.png?raw=true)
 
 ### Details and Reservation Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/main/screenshots/DetailsandReservation-page.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/screenshots/DetailsandReservation-page.png?raw=true)
 
 ### ➕ Create New User Page
 
