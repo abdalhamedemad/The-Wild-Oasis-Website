@@ -36,48 +36,6 @@
 
 ## 🧐 Features <a name = "Features"></a>
 
-1. **Google Authentication**
-
-   - New users can only sign up through the app
-
-2. **User Profile Management**
-
-   - Clients can personalize their profiles by uploading avatars, changing names, and updating passwords.
-
-3. **Cabin Management**
-
-   - A table view displays all cabins with details such as photos, names, capacity, price, and any current discounts.
-   - Users can create new cabins, update or delete existing ones, and upload cabin photos.
-
-4. **Booking Management**
-
-   - A detailed table view showcases booking information, including arrival/departure dates, status, paid amount, cabin details, and guest data.
-   - Bookings can be filtered by status: "unconfirmed," "checked in," or "checked out."
-   - Users can check in or check out guests and delete bookings when necessary.
-
-5. **Payment Handling**
-
-   - At check-in, users can confirm payment receipt and manage booking payments.
-   - Guests can opt to add breakfast for their stay during the check-in process.
-
-6. **Guest Data Management**
-
-   - The app stores detailed guest information, including full name, email, national ID, nationality, and country flag for easy identification.
-
-7. **Dashboard**
-
-   - The initial screen provides key data from the last 7, 30, or 90 days.
-   - Displays a list of guests checking in and out on the current day, allowing users to handle related tasks.
-   - Includes statistics on recent bookings, sales, check-ins, and occupancy rates.
-   - Visual charts show daily hotel sales (including extras like breakfast) and statistics on guest stay durations.
-
-8. **Application-Wide Settings**
-
-   - Users can adjust settings such as breakfast price, minimum/maximum nights per booking, and maximum guest capacity per booking.
-
-9. **Dark Mode**
-   - A user-friendly dark mode feature improves visibility and reduces eye strain, particularly in low-light environments.
-
 ## 🚀 Live Demo <a name = "life_demo" href="https://the-wild-oasis-dusky-kappa.vercel.app/" >Demo</a>
 
 ## 📸 Screenshots <a name = "screen_shots"></a>
@@ -94,15 +52,21 @@
 
 ![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/cabins-page.png?raw=true)
 
+### About Page
+
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/about-page.png?raw=true)
+
 ### Details and Reservation Page
 
 ![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/DetailsandReservation-page.png?raw=true)
 
-### ➕ Create New User Page
+### Account Page
+
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/account-page.png?raw=true)
 
 ### ⚙️ Update Account Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/main/screenshots/update-profile-page.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/update-profile-page.png?raw=true)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
