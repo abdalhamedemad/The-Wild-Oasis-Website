@@ -105,3 +105,11 @@ export default async function MyComponent() {
 ## Fetching data in nextjs
 
 - BETTER to fetch data at Server components and passed to client component as a props
+
+## context api
+
+- context api will be only available for client components bec it contains hooks ...
+
+## making endpoint Api in nextjs
+
+- by Making a folder and inside the folder make file names route.js

@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import CabinList from "../_components/CabinList";
 import Spinner from "../_components/Spinner";
 import Filter from "../_components/Filter";
+import ReservationReminder from "../_components/ReservationReminder";
 
 // here the following line will make the data cashed at the server side
 // to be revalidated every 0 seconds so will change this page to be dynamic page
@@ -43,6 +44,7 @@ export default async function Page({ searchParams }) {
       */}
       <Suspense fallback={<Spinner />} key={filter}>
         <CabinList filter={filter} />
+        <ReservationReminder />
       </Suspense>
     </div>
   );
