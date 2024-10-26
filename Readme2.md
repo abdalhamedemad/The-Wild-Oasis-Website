@@ -113,3 +113,8 @@ export default async function MyComponent() {
 ## making endpoint Api in nextjs
 
 - by Making a folder and inside the folder make file names route.js
+
+## Middleware in nextjs
+
+- middleware must be one file and in the root folder outside app folder
+- middleware function will be called for each request to the website we can specify a matcher in order to be called for specific routes
