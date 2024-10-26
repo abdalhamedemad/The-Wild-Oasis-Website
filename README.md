@@ -84,19 +84,19 @@
 
 ### 🚶‍➡️Login
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/screenshots/login-page.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/login-page.png?raw=true)
 
 ### 🏠 Home Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/screenshots/home-page.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/home-page.png?raw=true)
 
 ### 🏠 Cabin Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/screenshots/cabins-page.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/cabins-page.png?raw=true)
 
 ### Details and Reservation Page
 
-![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/screenshots/DetailsandReservation-page.png?raw=true)
+![screenshot](https://github.com/abdalhamedemad/The-Wild-Oasis-Website/blob/master/screenshots/DetailsandReservation-page.png?raw=true)
 
 ### ➕ Create New User Page
 
