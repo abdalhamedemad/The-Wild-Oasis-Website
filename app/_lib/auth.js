@@ -15,34 +15,36 @@ const authConfig = {
       // !! convert to boolean
       return !!auth?.user;
     },
+    // will be called before user sign in
+    // like middleware
+    async signIn({ user, account, profile }) {
+      console.log("calleddd");
+      try {
+        const existingGuest = await getGuest(user.email);
+        if (!existingGuest) {
+          console.log(2);
+
+          await createGuest({
+            email: user.email,
+            fullName: user.name,
+          });
+        }
+
+        return true;
+      } catch (error) {
+        return false;
+      }
+    },
+    // add guestId to session
+    // here will be called after user sign in or sign out
+    async session({ session, user }) {
+      const guest = await getGuest(session.user.email);
+      session.user.guestId = guest.id;
+      return session;
+    },
   },
   pages: {
     signIn: "/login",
-  },
-  // will be called before user sign in
-  // like middleware
-  async signIn({ user, account, profile }) {
-    try {
-      const existingGuest = await getGuest(user.email);
-
-      if (!existingGuest) {
-        await createGuest({
-          email: user.email,
-          fullName: user.name,
-        });
-      }
-
-      return true;
-    } catch (error) {
-      return false;
-    }
-  },
-  // add guestId to session
-  // here will be called after user sign in or sign out
-  async session({ session, user }) {
-    const guest = await getGuest(user.email);
-    session.user.guestId = guest.id;
-    return session;
   },
 };
 

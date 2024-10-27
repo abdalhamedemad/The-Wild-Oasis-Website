@@ -118,3 +118,22 @@ export default async function MyComponent() {
 
 - middleware must be one file and in the root folder outside app folder
 - middleware function will be called for each request to the website we can specify a matcher in order to be called for specific routes
+
+## what is Server Actions
+
+- the server actions are the functions that are executed on the server side and can be called from the client side
+- server actions are useful for making the server components interactive and reactive i.e handling click for form submissions
+- behind the scene the server actions are called by the client side and the server side will execute the function and return the result to the client side using API endpoint
+- used for handling form submissions, handling clicks, etc for data mutations
+- server actions require a running web server
+
+- two way for defining server actions
+  1. async function in the server component
+  2. separated file with "use server" directive at the top of the file and export the function
+- Server Action can be called from:
+
+  1. action attribute in a <form> element (in server components or client components)
+  2. event handlers (only clients components)
+  3. useEffect hook (only clients components)
+
+- in server actions we can do data mutations , update ui by revalidate , work with cookies...
