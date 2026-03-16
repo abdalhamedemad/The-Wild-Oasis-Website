@@ -4,12 +4,12 @@ import Link from "next/link";
 
 function CabinCard({ cabin }) {
   const { id, name, maxCapacity, regularPrice, discount, image } = cabin;
-
+  const fixedUrl = image.replace("//storage", "/storage");
   return (
     <div className="flex border-primary-800 border">
       <div className="flex-1 relative">
         <Image
-          src={image}
+          src={fixedUrl}
           fill
           alt={`Cabin ${name}`}
           className=" object-cover flex-1 border-r border-primary-800"

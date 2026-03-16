@@ -18,7 +18,7 @@ export const metadata = {
 };
 
 // here we use searchParams so this page will be dynamically generated
-export default async function Page({ searchParams }) {
+export default function Page({ searchParams }) {
   // CHANGE
   // will be blocking until the data is fetched
   const filter = searchParams?.capacity ?? "all";

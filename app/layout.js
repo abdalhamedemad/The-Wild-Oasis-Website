@@ -20,6 +20,7 @@ export const metadata = {
     "Luxurious cabin hotel, located in the heart of the Egypt, surrounded by the beautiful nature of the desert.",
 };
 
+// root layout that will wrap the entire application
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <Header />
         <div className="flex-1 px-8 py-12 grid">
           <main className="max-w-7xl mx-auto w-full ">
+            {/*here the children will replace with the page  */}
             <ReservationProvider>{children}</ReservationProvider>
           </main>
         </div>
