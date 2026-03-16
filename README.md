@@ -36,7 +36,7 @@
 
 ## 🧐 Features <a name = "Features"></a>
 
-## 🚀 Live Demo <a name = "life_demo" href="https://the-wild-oasis-dusky-kappa.vercel.app/" >Demo</a>
+## 🚀 Live Demo <a name = "life_demo" href="https://the-wild-oasis-website-eight-sepia.vercel.app/" >Demo</a>
 
 ## 📸 Screenshots <a name = "screen_shots"></a>
 
